@@ -1,0 +1,193 @@
+Do poniższych zadań przygotuj zapytania odpowiadające na postawione pytania.
+
+Skrypt 2.
+1. Wybierz wszystkie kolumny z tabeli departments.
+2. Wybierz kolumnę department_id i department_name z tabeli departments.
+3. Zainwestowałeś w aktywo 100 jednostek. W pierwszym roku stopa zwrotu wyniosła 8%, w drugim -3#, w trzecim 17,5%. Ile jednostek otrzymasz po sprzedaży aktywa po trzecim okresie?
+4. Wybierz tylko tych pracowników, którzy zarabiają więcej niż 5000.
+5. Wybierz pracowników zatrudnionych pomiędzy rokiem 1992 a 1994 włącznie.
+6. Wybierz tych pracowników, którzy w kodzie stanowiska mają AD_VP lub AD_PRES.
+7. Wybierz tych pracowników, których nazwisko zawiera literę 'e'.
+8. Wybierz tych pracowników, którzy mają 4-literowe lub 5-literowe imię.
+9. Którzy pracownicy mają płacony bonus?
+10. Oblicz roczne wynagrodzenie każdego pracownika (salary, commission_pct*salary, bonus). Kto zarobił najmniej?
+11. Którzy pracownicy zostali zatrudnieni przed 1995 i nie mają kodu stanowiska zawierającego 'MAN'.
+12. Którzy pracownicy zarabiają pomiędzy 5 a 10 tysięcy lub pracują w departamentach 90 lub 110.
+
+Skrypt 3
+13. Dla każdego z pracowników wyświetl informację jak poniżej z użyciem ||:
+'Neena Kochhar została zatrudniona 12-Sep-89 i zarabia 17000$'
+'{Imię} {Nazwisko} została zatrudniona {data zatrudnienia} i zarabia {pensja}$'
+14. Zrób to samo co w poleceniu 13 z użyciem funkcji concat()
+15. Zmodyfikuj polecenie z zadania 14 tak, aby kolumna nosiła nazwe 'employee info'.
+16. Wyświetl kolumny first_name, last_name, phone_number z tabeli employees. Nadaj im polskie nazwy (aliasy).
+17. Opisz strukturę tabeli departments. Czy department_name może być puste?
+18. Posortuj pracowników według pensji malejąco. Których trzech zarabia najwięcej?
+19. Posortuj pracowników według pensji rosnąco i daty zatrudnienia malejąco. Których trzech zarabia najwięcej?
+
+Skrypt 4
+funckje tekstowe
+20. Wyświetl nazwiska pracowników z dużych liter, imiona, z małych.
+21. Wyszukaj wszystkich pracowników, którzy mają imię zawierające 'ab'. Zapytanie powinno być nieczułe na wielkość liter.
+22. Pokaż pierwszą literę imienia i nazwiska każdego pracownika. Połącz je w 2-wyrazowe wyrażenia (konkatencja).
+23. Który pracownik ma najdłuższe nazwisko a który najkrótsze?
+24. Pokaż nazwy departamentów uzupełnione spacjami do 20 znaków z prawej strony i adresy email usupełnione z lewej strony myślnikami do 25 znaków.
+25. Wyświetl nazwiska pracownikó bez liter 'a' i z zamienionym 'i' na 'j'.
+26. Zakoduj pensje pracowników na wyrażenia 'XXXX' lub 'XXXXX' (w zależności od wysokości pensji).
+funkcje numeryczne
+27. Premia za dobre wyniki firmy wynosi 9,5% rocznego wynagrodzenia. Oblicz tą premie dla każdego pracownika.
+28. Premię z zadania 27 zaokrąglij do pełnych setek.
+29. Premię z zadania 27 wyświetl bez miejsc po przecinku (utnij je, nie zaokrąglaj).
+30. Wyświetl najwyższą spośród premii z zadania 27 (jedno polecenie).
+31. Zaokrąglij do góry i do dołu premię z zadania 27.
+32. Lokata bankowa ma oprocentowanie 8% w skali roku z miesięczną kapitalizacją. Ile więcej % zysku rocznie przyniesie ta lokata w porównaniu do kapitalizacji rocznej?
+funkcje dat
+33. Wyświetl jaka będzie data za 7 dni od dzisiejszej.
+34. Ile dni minęło od daty rozpoczęcia Państwa studiów?
+35. Ile miesięcy minęło od daty Państwa urodzenia?
+36. Wyświetl, kiedy będzie następna niedziela?
+37. Jaka będzie data za 100 miesięcy?
+38. Wyświetl ostatni dzień obecnego miesiąca.
+39. Zaokrąglij obecną datę do miesięcy.
+funkcje konwertujące
+40. Wyświetl obecną godzinę, minutę i sekundę.
+41. Wyświetl nazwę miesiąca zatrudnienia każdego pracownika.
+42. Przekonweruj wartość '123 456 789,000' do wartości liczbowej.
+43. Przekonwertuj wartość 'January, 17 2020 23:12:14:1234' na datę i czas.
+funkcje polimorficzne
+44. Z użyciem klauzuli CASE wyświetl pracowników wypisując 'Kadra zarządzająca' jeżeli kod stanowiska 'AD_PRES' lub 'AD_VP'. W przeciwnom przypadku wypisz 'pracownik'.
+45. Z użyciem DECODE wyświetl 'doświadczony' jeżeli pracownik został zatrudniony przed 1990 rokiem,
+'średnio doświadczony' jeżeli został zatrudniony pomiędzy 1990 a 1995, w przeciwnym przypadku 'nowy pracownik'.
+
+Skrypt 5
+46. Wyświetl maksymalną i minimalną datę zatrudnienia pracowników i różnice między nimi.
+47. Wyświetl odchylenie standardowe i wariancję pensji.
+48. Ile firma musi wydać na wynagrodzenia rocznie?
+49. Który departament wydaje najwięcej na pensje miesięcznie (salary).
+50. W ilu latach zatrudniano pracowników (ile jest unikalnych lat w hire_date)?
+51. W którym roku zatrudniona najwięcej pracowników?
+52. Jaki jest średni bonus wypłacany pracownikom?
+53. Oblicz minimalną wartość spośró średnich pensji w departamentach.
+54. W którym departamencie średnio zarabia się więcej niż 5000.
+55. Spośród departamentów o numerze 20, 50, 60 i 80 wyświetl średnie pensje dla JOB_ID i DEPARTMENT_ID. W której kombinacji pensja jest najwyższa?
+
+Skrypt 6
+56. Pokaz nazwiska pracowników, oraz numery i nazwy ich departamentów.
+57. Pokaż numery i nazwiska pracowników oraz numery i nazwiska ich szefów.
+58. Zmodyfikuj polecenie 57., żeby zobaczyć również te osoby, które nie mają szefów.
+59. Wyświetl wszystkie kombinacje pracowników i departamentów.
+60. Pokaż nazwiska, stanowiska, pensje, nazwy departamentów.
+61. Pokaż nazwiska, stanowiska, pensje, nazwy departamentów sprzedawców (SA na początku stanowiska).
+62. Pokaż nazwiska, stanowiska, pensje, nazwy departamentów osób pracujących  w departamentach 50 i 60.
+63. Kto pracuje w lokalizacji 1700?
+64. Jaka jest najwyższa pensja w lokalizacji 1700?
+65. Pokaż pracowników i ich grupy zaszeregowania.
+66. Który urzędnik (CLERK w kodzie stanowiska) jest w grupie B?
+67. Kto z departamentu Shipping pracuje dłużej niż 19 lat?
+68. Zmodyfikuj polecenie 67, aby użyć klauzuli where z (+) jako wskazaniem outer join.
+
+Skrypt 7
+69.Pokaż nazwiska, daty zatrudnienia pracowników, którzy pracują w tym 
+samym departamentcie co Zlotkey.
+70. Kto z ww pracuje dłużej od Zlotkey, ale mniej zarabia?
+71. Którzy pracownicy zarabiają powyżej średniej?
+72. Kto pracuje w jednym departamencie z prezesem (PRES w kodzie stanowiska)?
+73. Kto pracuje w lokalizacji 1700 - 2 sposoby rozwiązania
+74. Kto raportuje do Kinga?
+75. Kto zarabia więcej od każdego ze sprzedawców (SA na początku stanowiska)?
+76. Czy menedżerowie (MAN na końcu kodu stanowiska) to najlepiej opłacane stanowisko? 
+   Czy ktoś zarabia więcej od któregokolwiek menedżera?
+77. Kto z departamentu 90 był zatrudniony przed osobami 
+   pracującymi obecnie w departmencie 80?
+78.Znajdź osoby z departamentu 90, które pracują dłużej od przynajmniej 
+   jednej osoby z departamentu 80.
+79. Kto zarabia więcej niż średnie zarobki w firmie?
+80. Które departamenty mają to samo location_id co departamenty 20 i 60?
+81. Pokaż numery,nazwiska, szefów, departamenty osób, które mają tego samego 
+   szefa i departament co 174 oraz tych, którzy mają ten sam departament i 
+   szefa co 200.
+82. Pokaż nazwy departamentów osób zatrudnionych przed pracownikiem o numerze 101.
+
+Skrypt 8 (więcej zadań później)
+83. Utwórz tabelę z użyciem tego zapytania:
+CREATE TABLE copy_employees
+AS (SELECT * FROM employees where 1=0);
+84. Dodaj jeden wiersz do tabeli copy_employees ze wskazaniem kolumn. Wartość phone_number powinna być pusta.
+85. Dodaj jeden wiersz do tabeli copy_employees bez wskazywania na kolejność kolumn.
+86. Zmodyfikuj wiersz gdzie phone_number jest puste - dodaj wartość.
+87. Pracownik dodany w zadaniu 85 dostał 10% podwyżki. Uwzględnij ją w tabeli.
+88. Wszystcy pracownicy dostali dodatkowe 1000 zł bonusu. Uwzględnij je w tabeli.
+89. Pracownik z linii 84 złożył wypowiedzenie. Usuń go z tabeli.
+90. Przekopiuj wszystkich pracowników z kodem stanowiska 'AD_VP' z tabeli employees do copy_employees.
+91. Z tabeli copy_employees usuń wszystkich pracowników zarabiających powyżej 15000.
+
+Skrypt 9
+92. Utwórz transakcję opisaną poniżej:
+ - usuń wszystkich pracownikó z tabeli copy_employees
+ - dodaj SAVEPOINT
+ - dodaj jednego pracownika do tabeli copy_employees
+ - cofnij operacje do SAVEPOINT
+ - wycofaj całą transakcję
+ Po każdym kroku sprawdź, czy transakcja działa poprawnie (z użyciem select).
+ 
+Skrypt 10
+93. Należy utworzyć tabelę employees_sh zawierającą następujące informacje:
+employee_id, first_name, last_name, email, job_id z tabeli employees
+department_name z tabeli departments
+city i country_id z tabeli locations
+job_title z tabeli jobs
+Zauważ, że pracownicy IT mają job_id = 'IT_PROG'
+94. Utwórz tabelę area_sh z następującymi atrybutami i odpowiednimi więzami integralności:
+area_id, area_name, area_year_bonus
+Tabela będzie zawierała informację o specjalizacjach danych pracowników IT.
+95. Do tabeli area_sh dodaj kilka rekordów ze specjalizacjami np. backend, frontend databases, data science, project management
+96. Do tabeli employees_sh dodaj kolumny z odpowiednimi typami danych: salary, manager_id, area_id
+97. Do tabeli employees_sh dodaj pracownika ze swoim imieniem i nazwiskiem który będzie miał job_id = 'AD_VP' jako szef firmy
+98. Uzupełnij kody manager_id dla wszystkich pracowników od pracownika z zadania 5. Employee_id = 1
+99. Dodaj dwa wiersze do tabeli employees_sh
+100. Dodaj wiersze z poniższych linijek kodu(uruchom poniższe linijki kodu)
+insert into employees_sh values ('2','Adam ','Nowak','Adam Nowak@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('3','Michał','Kowal','MichałKowal@it.com','IT_PROG','IT','Warsaw','PL','PL','1')
+insert into employees_sh values ('4','Anna','Nowak','AnnaNowak@it.com','IT_PROG','IT','Paris','FR','FR','1')
+insert into employees_sh values ('5','Joanna','Kowal','JoannaKowal@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('6','Adam ','Nowak','Adam Nowak@it.com','IT_PROG','IT','Warsaw','PL','PL','1')
+insert into employees_sh values ('7','Michał','Kowal','MichałKowal@it.com','IT_PROG','IT','Paris','FR','FR','1')
+insert into employees_sh values ('8','Anna','Nowak','AnnaNowak@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('9','Joanna','Kowal','JoannaKowal@it.com','IT_PROG','IT','Warsaw','PL','PL','1')
+insert into employees_sh values ('10','Adam ','Nowak','Adam Nowak@it.com','IT_PROG','IT','Paris','FR','FR','1')
+insert into employees_sh values ('11','Michał','Kowal','MichałKowal@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('12','Anna','Nowak','AnnaNowak@it.com','IT_PROG','IT','Warsaw','PL','PL','1')
+insert into employees_sh values ('13','Joanna','Kowal','JoannaKowal@it.com','IT_PROG','IT','Paris','FR','FR','1')
+101. Uzupełnij salary i area_id dla pracowników (update dla kilku jednocześnie).
+102. Zmodyfikuj tabelę employees_sh i kolumnę salary aby zawierała wartości nie niższe niż 3000 (np. minimalna krajowa).
+103. Jeżeli jakieś wiersze uniemożliwiają wykonanie polecenia 10 zmodyfikuj je.
+
+Skrypt 11
+104. Nadaj dowolne uprawnienia (select obowiązkowo) do użytkownika sql101
+105. Sprawdź data dictionary dla utworzonych tabeli
+106. Usuń uprawnienia dla użytkownika sql101 
+107. Usuń tabele employees_sh i area_sh
+
+Skrypt 12
+108. Utwórz perspektywę E_C, która pokaże dane urzędników
+109. Utwórz pespektywę E_C_3000, która pokaże numery, nazwiska, pensje miesięczne
+   i roczne urzędników zarabiających więcej niż 3000. 
+110. Utwórz perspektywę E_SAL z kolumnami nazwisko, stanowisko, departament,
+   która pokaże dane sprzedawców zatrudnionych przed Matosem.
+111. Utwórz perspektywę E_DEP pokazującą nazwiska pracowników, numery, nazwy 
+   i location_id ich departamentów.
+112. Utwórz perspektywę DEPT_AGG zawierającą numery departamentów, największe i 
+   najmniejsze pensje w poszczególnych departamentach.
+113. Usuń perspektywę E_C
+114. Przeczytaj w słowniku danych jak zdefiniowano perspektywy:
+    E_C_3000,  DEPT_AGG
+
+Skrypt 13
+115. Utwórz synonim nałożony na departamenty.
+116. Usuń ten synonim.
+117. Udziel osobie obok uprawnienia do tworzenia synonimów w twoim schemacie 
+118. Utwórz sekwencje pokazującą, kiedy mamy rok przestępny (co 4 lata od jakiejś daty na początku XXI wieku)
+119. Sprawdź, pierwszą wartość roku przestępnego i kolejne aż do następnego w stosunku do dzisiejszej daty
+120. Utwórz tabelę emp_name przechowującą informacje o nazwisku pracownika. Dodaj klucz pierwotny jako kolejny numer począwszy od 1 (użyj sekwencji).
+121. Dodaj kilka wierszy do tabeli emp_name z wykorzystaniem sekwencji.
+122. Usuń sekwencje do lat przestępnych i tabelę emp_name.
