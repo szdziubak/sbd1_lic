@@ -13,3 +13,5 @@ Skrypt 10 - praca z tabelą<br>
 Skrypt 11 - uprawnienia, data dictionary<br>
 Skrypt 12 - perspektywy<br>
 Skrypt 13 - synonimy, sekwencje<br>
+
+Zaliczenie: test
