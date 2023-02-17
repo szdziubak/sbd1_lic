@@ -3,7 +3,7 @@
 Skrypt 1 - podstawy pracy z SQL Developer, omówienie danych<br>
 Skrypt 2 - polecenie SELECT, where<br>
 Skrypt 3 - konkatencja, aliasy, sortowanie<br>
-Skrypt 4 - funckje jednowierszowe<br>
+Skrypt 4 - funkcje jednowierszowe<br>
 Skrypt 5 - funkcje wielowierszowe - agregujące<br>
 Skrypt 6 - łączenia tabel<br>
 Skrypt 7 - podzapytania<br>
