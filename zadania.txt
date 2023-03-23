@@ -18,12 +18,20 @@ Skrypt 3
 13. Dla każdego z pracowników wyświetl informację jak poniżej z użyciem ||:
 'Neena Kochhar została zatrudniona 12-Sep-89 i zarabia 17000$'
 '{Imię} {Nazwisko} została zatrudniona {data zatrudnienia} i zarabia {pensja}$'
+select first_name || ' ' || last_name || ' została zatrudniona ' ||  to_char(hire_date, 'dd-mon-yy') || ' i zarabia ' || salary || '$' from employees;
 14. Zrób to samo co w poleceniu 13 z użyciem funkcji concat()
+select concat(first_name, concat( ' ',concat( last_name, concat(' została zatrudniona ', concat(to_char(hire_date, 'dd-mon-yy'), concat( ' i zarabia ', concat( salary , '$'))))))) from employees;
 15. Zmodyfikuj polecenie z zadania 14 tak, aby kolumna nosiła nazwe 'employee info'.
+select concat(first_name, concat( ' ',concat( last_name, concat(' została zatrudniona ', concat(to_char(hire_date, 'dd-mon-yy'), concat( ' i zarabia ', concat( salary , '$'))))))) as "employee info" from employees;
 16. Wyświetl kolumny first_name, last_name, phone_number z tabeli employees. Nadaj im polskie nazwy (aliasy).
+select first_name as imie, last_name as nazwisko, phone_number as numer_telefonu from employees;
 17. Opisz strukturę tabeli departments. Czy department_name może być puste?
+describe departments; --nie, jest NOT NULL
 18. Posortuj pracowników według pensji malejąco. Których trzech zarabia najwięcej?
+select * from employees order by salary desc; --King, Kochhar, De Haan
 19. Posortuj pracowników według pensji rosnąco i daty zatrudnienia malejąco. Których trzech zarabia najwięcej?
+select * from employees order by salary, hire_date desc; --King, Kochhar, De Haan
+
 
 Skrypt 4
 funckje tekstowe
