@@ -100,10 +100,10 @@ FROM employees e, departments d
 WHERE e.department_id = d.department_id
 AND department_id = 80;
 
---oraclowe z³¹czenia nierówne
+/*--oraclowe z³¹czenia nierówne
 SELECT last_name, salary, grade_level, lowest_sal, highest_sal
 FROM employees, job_grades
-WHERE (salary BETWEEN lowest_sal AND highest_sal);
+WHERE (salary BETWEEN lowest_sal AND highest_sal);*/
 
 --oraclowy outer join - (+) przy tabeli, przy której mog¹ byæ brakuj¹ce dane czyli bierzemy wszystko z jednej tabeli i do³¹czamy do niej dane z tabeli z (+)
 SELECT e.last_name, d.department_id, 
