@@ -1,13 +1,13 @@
 --Podzapytania
 
---Podzapytania - zapytanie wewnêtrzne wykorzystywane przez zapytanie g³ówne
+--Podzapytania - zapytanie wewnÃªtrzne wykorzystywane przez zapytanie gÂ³Ã³wne
 --podzapytania umieszczamy w nawiasach
---nie mo¿e zawieraæ ORDER BY
+--nie moÂ¿e zawieraÃ¦ ORDER BY
 
 /*
-Typy podzapytañ:
-- jednowierszowe - zwracaj¹ jeden wiersz, u¿yjemy >, =, <, <>, <=
-- wielowierszowe - zwracaj¹ wiele wierszy, u¿yjemy IN, ANY, ALL
+Typy podzapytaÃ±:
+- jednowierszowe - zwracajÂ¹ jeden wiersz, uÂ¿yjemy >, =, <, <>, <=
+- wielowierszowe - zwracajÂ¹ wiele wierszy, uÂ¿yjemy IN, ANY, ALL
 */
 
 --podzapytania jednowierszowe
@@ -22,7 +22,7 @@ FROM employees WHERE last_name = 'Grant'); --podzapytanie zwraca NULL
 SELECT last_name, job_id, department_id
 FROM employees
 WHERE department_id = 
-(SELECT department_id --nie wiemy który department_id ma marketing wiêc tworzymy podzapytanie
+(SELECT department_id --nie wiemy ktÃ³ry department_id ma marketing wiÃªc tworzymy podzapytanie
 FROM departments
 WHERE department_name = 'Marketing')
 ORDER BY job_id;
@@ -39,14 +39,14 @@ AND department_id =
 FROM departments 
 WHERE location_id = 1500); --drugi warunek
 
---z funkcjami grupuj¹cymi
+--z funkcjami grupujÂ¹cymi
 SELECT last_name, salary
 FROM employees
 WHERE salary < 
-(SELECT AVG(salary) --pracownicy zarabiaj¹cy poni¿ej œredniej
+(SELECT AVG(salary) --pracownicy zarabiajÂ¹cy poniÂ¿ej Å“redniej
 FROM employees);
 
---departamenty z pensj¹ wy¿sz¹ ni¿ minimalna dla departamentów
+--departamenty z pensjÂ¹ wyÂ¿szÂ¹ niÂ¿ minimalna dla departamentÃ³w
 SELECT department_id, MIN(salary)
 FROM employees
 GROUP BY department_id
@@ -62,27 +62,27 @@ FROM employees
 WHERE EXTRACT(YEAR FROM hire_date) IN
 (SELECT EXTRACT(YEAR FROM hire_date)
 FROM employees
-WHERE department_id=90); --lata zatrudnienia wœród lat zatrudnienia ludzi z departamentu 90
+WHERE department_id=90); --lata zatrudnienia wÅ“rÃ³d lat zatrudnienia ludzi z departamentu 90
 
---ANY - co najmniej jedna wartoœæ
+--ANY - co najmniej jedna wartoÅ“Ã¦
 SELECT last_name, hire_date
 FROM employees
-WHERE EXTRACT(YEAR FROM hire_date) < ANY --rok musi byæ mniejszy ni¿ co najmneij jeden rok spoœród pracowników z departamentu 90
+WHERE EXTRACT(YEAR FROM hire_date) < ANY --rok musi byÃ¦ mniejszy niÂ¿ co najmneij jeden rok spoÅ“rÃ³d pracownikÃ³w z departamentu 90
 (SELECT EXTRACT(YEAR FROM hire_date)
 FROM employees
 WHERE department_id=90);
 
 
---ALL - wszystkie wartoœci
+--ALL - wszystkie wartoÅ“ci
 SELECT last_name, hire_date
 FROM employees
-WHERE EXTRACT(YEAR FROM hire_date) < ALL --rok musi byæ mniejszy ni¿ wszystkie wartoœci
+WHERE EXTRACT(YEAR FROM hire_date) < ALL --rok musi byÃ¦ mniejszy niÂ¿ wszystkie wartoÅ“ci
 (SELECT EXTRACT(YEAR FROM hire_date)
 FROM employees
 WHERE department_id=90);
 
---Dla ANY i IN je¿eli w podzapytaniu mamy NULL to zapytanie g³ówne zwróci wiersze które bêd¹ pasowa³y do nienullowych wartoœci
---Dla ALL je¿eli w podzapytaniu mamy NULL to podzapytanie nie zwróci nic wiêc zapytanie g³ówne równie¿ nic nie zwróci
+--Dla ANY i IN jeÂ¿eli w podzapytaniu mamy NULL to zapytanie gÂ³Ã³wne zwrÃ³ci wiersze ktÃ³re bÃªdÂ¹ pasowaÂ³y do nienullowych wartoÅ“ci
+--Dla ALL jeÂ¿eli w podzapytaniu mamy NULL to podzapytanie nie zwrÃ³ci nic wiÃªc zapytanie gÂ³Ã³wne rÃ³wnieÂ¿ nic nie zwrÃ³ci
 SELECT last_name, employee_id
 FROM employees
 WHERE employee_id IN
@@ -95,7 +95,7 @@ WHERE employee_id <= ALL
 (SELECT manager_id
 FROM employees);
 
---podzapytania wielowierszowe z funkcj¹ grupuj¹c¹
+--podzapytania wielowierszowe z funkcjÂ¹ grupujÂ¹cÂ¹
 SELECT department_id, MIN(salary)
 FROM employees
 GROUP BY department_id
@@ -105,7 +105,7 @@ FROM employees
 WHERE department_id IN (10,20))
 ORDER BY department_id;
 
---podzapytania z wieloma kolumnami
+/*--podzapytania z wieloma kolumnami
 SELECT employee_id, manager_id, department_id
 FROM employees
 WHERE(manager_id,department_id) IN
@@ -114,7 +114,7 @@ FROM employees
 WHERE employee_id IN (149,174))
 AND employee_id NOT IN (149,174);
 
---odpowiednik tego wy¿ej:
+--odpowiednik tego wyÂ¿ej:
 SELECT employee_id,
 manager_id, 
 department_id
@@ -129,4 +129,4 @@ AND department_id IN
 FROM employees
 WHERE employee_id IN 
 (149,174))
-AND employee_id NOT IN(149,174);
+AND employee_id NOT IN(149,174);*/
