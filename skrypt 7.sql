@@ -81,7 +81,7 @@ WHERE EXTRACT(YEAR FROM hire_date) < ALL --rok musi byæ mniejszy ni¿ wszystkie
 FROM employees
 WHERE department_id=90);
 
---Dla ANY i IN je¿eli w podzapytaniu mamy NULL to zapytanie g³ówne zwróci wiersze które bêd¹ pasowa³y do nienullowych wartoœci
+/*--Dla ANY i IN je¿eli w podzapytaniu mamy NULL to zapytanie g³ówne zwróci wiersze które bêd¹ pasowa³y do nienullowych wartoœci
 --Dla ALL je¿eli w podzapytaniu mamy NULL to podzapytanie nie zwróci nic wiêc zapytanie g³ówne równie¿ nic nie zwróci
 SELECT last_name, employee_id
 FROM employees
@@ -93,7 +93,7 @@ SELECT last_name, employee_id
 FROM employees
 WHERE employee_id <= ALL
 (SELECT manager_id
-FROM employees);
+FROM employees);*/
 
 --podzapytania wielowierszowe z funkcj¹ grupuj¹c¹
 SELECT department_id, MIN(salary)
