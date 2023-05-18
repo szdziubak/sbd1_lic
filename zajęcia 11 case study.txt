@@ -1,0 +1,49 @@
+Przedsiębiorstwo postanowiło przenieść wszystkich pracowników IT do innej firmy (wewnętrznego Software House).
+1. Należy utworzyć tabelę employees_sh zawierającą następujące informacje:
+employee_id, first_name, last_name, email, job_id z tabeli employees
+department_name z tabeli departments
+city i country_id z tabeli locations
+Zauważ, że pracownicy IT mają job_id = 'IT_PROG'
+
+2. Utwórz tabelę area_sh z następującymi atrybutami i odpowiednimi więzami integralności:
+area_id, area_name, area_year_bonus
+Tabela będzie zawierała informację o specjalizacjach danych pracowników IT.
+
+3. Do tabeli area_sh dodaj kilka rekordów ze specjalizacjami np.
+backend, frontend databases, data science, project management
+
+4. Do tabeli employees_sh dodaj kolumny z odpowiednimi typami danych:
+salary, manager_id, area_id
+
+5. Do tabeli employees_sh dodaj pracownika ze swoim imieniem i nazwiskiem który będzie miał job_id = 'AD_VP' jako szef firmy
+
+6. Uzupełnij kody manager_id dla wszystkich pracowników od pracownika z zadania 5. Employee_id = 1
+
+7. Dodaj dwa wiersze do tabeli employees_sh
+
+8. Dodaj wiersze z poniższych linijek kodu(uruchom poniższe linijki kodu)
+
+insert into employees_sh values ('2','Adam ','Nowak','Adam Nowak@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('3','Michał','Kowal','MichałKowal@it.com','IT_PROG','IT','Warsaw','PL','PL','1')
+insert into employees_sh values ('4','Anna','Nowak','AnnaNowak@it.com','IT_PROG','IT','Paris','FR','FR','1')
+insert into employees_sh values ('5','Joanna','Kowal','JoannaKowal@it.com','IT_PROG','IT','Toronto ','CA','CA','1')
+insert into employees_sh values ('6','Adam ','Nowak','Adam Nowak@it.com','IT_PROG','IT','Warsaw','PL','PL','1'
+
+Uzupełnij te wiersze o brakujące dane.
+
+9. Zmodyfikuj tabelę employees_sh i kolumnę salary aby zawierała wartości nie niższe niż 3000 (np. minimalna krajowa) - warunek integralności.
+
+10. Jeżeli jakieś wiersze uniemożliwiają wykonanie polecenia 9 zmodyfikuj je.
+
+11. Nadaj dowolne uprawnienia (select obowiązkowo) do użytkownika sql101
+
+12. Sprawdź data dictionary dla utworzonych tabeli
+
+13. Usuń uprawnienia dla użytkownika sql101
+
+14. Usuń tabele employees_sh i area_sh
+
+
+
+
+
