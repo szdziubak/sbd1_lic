@@ -1,7 +1,7 @@
 /*Perspektywy:
-Nie przechowuj¹ danych, przechowuj¹ zapytanie
-Pozwalaj¹ na ukrycie zaawansowanego kodu pod perspektyw¹
-Umo¿liwiaj¹ dostêp tylko do wybranych danych */
+Nie przechowujÂ¹ danych, przechowujÂ¹ zapytanie
+PozwalajÂ¹ na ukrycie zaawansowanego kodu pod perspektywÂ¹
+UmoÂ¿liwiajÂ¹ dostÃªp tylko do wybranych danych */
 
 --CREATE OR REPLACE VIEW nazwa_perspektywy 
 --AS podzapytanie
@@ -20,7 +20,7 @@ create view pracownicy (nazwisko,pensja_roczna,data_zatr) --nazwy kolumn w persp
 as select last_name,salary*12,hire_date
 from employees where salary<10000;
 
-select * from dict where lower(table_name) like '%view%';
+/*select * from dict where lower(table_name) like '%view%';
 
 select * from user_views;
 
@@ -29,7 +29,7 @@ describe pracownicy;
 create or replace view pracownicy (nazwisko,pensja_roczna,data_zatr) --nazwy kolumn w perspektywie
 as select last_name,salary*12,hire_date
 from employees where salary<12000; --modyfikacja widoku
-
+*/
 drop view employees_view;
 drop view pracownicy;
 drop view pracownicy_departamenty;
