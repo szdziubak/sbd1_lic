@@ -56,8 +56,8 @@ funkcje konwertujące
 42. Przekonweruj wartość '123 456 789,000' do wartości liczbowej.
 43. Przekonwertuj wartość 'January, 17 2020 23:12:14:1234' na datę i czas.
 funkcje polimorficzne
-44. Z użyciem klauzuli CASE wyświetl pracowników wypisując 'Kadra zarządzająca' jeżeli kod stanowiska 'AD_PRES' lub 'AD_VP'. W przeciwnom przypadku wypisz 'pracownik'.
-45. Z użyciem DECODE wyświetl 'doświadczony' jeżeli pracownik został zatrudniony przed 1990 rokiem,
+44. Z użyciem klauzuli CASE wyświetl pracowników wypisując 'Kadra zarządzająca' jeżeli kod stanowiska 'AD_PRES' lub 'AD_VP'. W przeciwnom przypadku wypisz 'pracownik'. Zrób to samo z użyciem funkcji DECODE.
+45. Z użyciem CASE wyświetl 'doświadczony' jeżeli pracownik został zatrudniony przed 1990 rokiem,
 'średnio doświadczony' jeżeli został zatrudniony pomiędzy 1990 a 1995, w przeciwnym przypadku 'nowy pracownik'.
 
 Skrypt 5
